@@ -3,6 +3,7 @@
 
 # &lt;vaadin-component-skeleton&gt;
 
+### [See it in action!](https://cdn-origin.vaadin.com/vaadin-core-elements/master/<vaadin-component>/demo/)
 
 ## Contributing
 
