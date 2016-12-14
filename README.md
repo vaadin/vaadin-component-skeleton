@@ -5,7 +5,7 @@
 
 # &lt;vaadin-element&gt;
 
-### [Live demo](https://cdn.vaadin.com/vaadin-core-elements/master/<vaadin-element>/demo/)
+<a href="https://cdn.vaadin.com/vaadin-core-elements/master/vaadin-element/demo/" target="_blank">Live Demo <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png"></a>
 
 [&lt;vaadin-element&gt;](https://vaadin.com/elements/-/element/vaadin-element) is a [Polymer](http://polymer-project.org) element providing &lt;element-functionality&gt;, part of the [Vaadin Core Elements](https://vaadin.com/elements).
 
