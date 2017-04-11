@@ -21,6 +21,7 @@
     "test": "wct"
   },
   "devDependencies": {
+    "bower": "latest",
     "gemini": "^4.17.1",
     "gemini-polyserve": "^1.0.0",
     "gemini-sauce": "^1.0.0",
