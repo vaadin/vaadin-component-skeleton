@@ -5,6 +5,8 @@
 
 # &lt;vaadin-element&gt;
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/vaadin/vaadin-element-skeleton.svg)](https://greenkeeper.io/)
+
 [Live Demo ↗](https://cdn.vaadin.com/vaadin-core-elements/master/vaadin-element/demo/)
 
 [&lt;vaadin-element&gt;](https://vaadin.com/elements/-/element/vaadin-element) is a [Polymer 2](http://polymer-project.org) element providing &lt;element-functionality&gt;, part of the [Vaadin Core Elements](https://vaadin.com/elements).
