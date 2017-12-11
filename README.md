@@ -32,6 +32,33 @@
 [<img src="https://raw.githubusercontent.com/vaadin/vaadin-element/master/screenshot.png" width="200" alt="Screenshot of vaadin-element">](https://vaadin.com/elements/-/element/vaadin-element)
 
 
+## Getting Started
+
+Vaadin Elements now use the Valo theme by default. You can customize the theme variant by setting the `theme` attribute on the `:host` element. For example:
+```html
+<vaadin-element theme="variant">
+  ...
+</vaadin-element>
+```
+<!-- <b>Note</b>: setting the theme of a vaadin element as "valo" has no effect. -->
+
+## The new file structure for Vaadin Elements
+
+- `src/element-name.html`
+  
+  Unstyled element.
+  
+- `theme/valo/element-name.html`
+
+  Element with Valo theme.
+
+- `element-name.html`
+
+  Alias for theme/valo/element-name.html
+
+[Further documentation on extending the default theme](https://github.com/vaadin/vaadin-themable-mixin/wiki/Extending-the-Default-Theme-Module)
+
+
 ## Running demos and tests in browser
 
 1. Fork the `vaadin-element` repository and clone it locally.
