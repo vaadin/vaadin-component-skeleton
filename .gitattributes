@@ -1,0 +1,10 @@
+# The default behavior
+* text=auto
+
+*.html text
+*.js text
+*.json text
+*.md text
+
+.gitattributes text
+.gitignore text
