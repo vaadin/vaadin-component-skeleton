@@ -14,7 +14,7 @@
 [API documentation ↗](https://vaadin.com/components/vaadin-element/html-api)
 
 
-[&lt;vaadin-element&gt;](https://vaadin.com/components/vaadin-element) is a [Polymer 2](http://polymer-project.org) element providing &lt;element-functionality&gt;, part of the [Vaadin components](https://vaadin.com/components).
+[&lt;vaadin-element&gt;](https://vaadin.com/components/vaadin-element) is a Web Component custom element providing &lt;element-functionality&gt;, part of the [Vaadin components](https://vaadin.com/components).
 
 <!--
 ```
