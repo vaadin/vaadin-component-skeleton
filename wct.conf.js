@@ -25,7 +25,6 @@ module.exports = {
   registerHooks: function(context) {
     const saucelabsPlatformsMobile = [
       'iOS Simulator/iphone@11.0',
-      'iOS Simulator/iphone@10.0',
       'macOS 9.3.2/iphone@9.3'
     ];
 
@@ -35,8 +34,6 @@ module.exports = {
     ];
 
     const saucelabsPlatformsDesktop = [
-      'Windows 10/chrome@67',
-      'Windows 10/firefox@61',
       'macOS 10.13/safari@11.1'
     ];
 
@@ -49,8 +46,9 @@ module.exports = {
     const cronPlatforms = [
       'Android/chrome',
       'macOS 10.12/ipad@11.0',
-      'Windows 10/chrome@67',
-      'Windows 10/firefox@61'
+      'iOS Simulator/iphone@10.0',
+      'Windows 10/chrome@latest',
+      'Windows 10/firefox@latest'
     ];
 
     if (env === 'saucelabs') {
