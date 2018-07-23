@@ -24,7 +24,7 @@ module.exports = {
 
   registerHooks: function(context) {
     const saucelabsPlatformsMobile = [
-      'iOS Simulator/iphone@11.0',
+      'iOS Simulator/iphone@11.3',
       'macOS 9.3.2/iphone@9.3'
     ];
 
@@ -50,8 +50,8 @@ module.exports = {
         platformVersion: '7.1',
         browserName: 'chrome'
       },
-      'macOS 10.12/ipad@11.0',
-      'iOS Simulator/iphone@10.0',
+      'macOS 10.12/ipad@11.3',
+      'iOS Simulator/iphone@10.3',
       'Windows 10/chrome@latest',
       'Windows 10/firefox@latest'
     ];
