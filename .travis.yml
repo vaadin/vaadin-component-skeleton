@@ -11,6 +11,12 @@ addons:
   firefox: latest
   chrome: stable
 
+# limit the Travis 'build on push' feature to the master branch only
+# (to avoid starting two CI builds when pushing into a PR branch)
+branches:
+  only:
+   - master
+
 env:
   - POLYMER=2 TEST_SUITE=unit_tests
   - POLYMER=2 TEST_SUITE=visual_tests
