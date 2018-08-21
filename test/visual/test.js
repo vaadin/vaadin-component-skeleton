@@ -15,10 +15,12 @@ gemini.suite('vaadin-element', function(rootSuite) {
     .after(goToAboutBlank);
 
   gemini.suite('default-tests', function(suite) {
-    suite
-      .setUrl('/default.html')
-      .setCaptureElements('#default-tests')
-      .capture('normal-button');
+    ['lumo', 'material'].forEach(theme => {
+      suite
+        .setUrl(`/default.html?theme=${theme}`)
+        .setCaptureElements('#default-tests')
+        .capture(`vaadin-element-${theme}`);
+    });
   });
 
 });
