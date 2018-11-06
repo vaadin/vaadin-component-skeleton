@@ -45,7 +45,7 @@ script:
           wct --env saucelabs;
         fi;
       else
-        xvfb-run -s '-screen 0 1024x768x24' wct;
+        npm run test:karma;
       fi &&
       if [[ "$TRAVIS_EVENT_TYPE" = "cron" && "$TEST_SUITE" = "unit_tests" ]]; then
         wct --env saucelabs-cron;
