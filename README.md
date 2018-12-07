@@ -11,11 +11,6 @@
 
 # &lt;vaadin-element&gt;
 
-[Live Demo ↗](https://vaadin.com/components/vaadin-element/html-examples)
-|
-[API documentation ↗](https://vaadin.com/components/vaadin-element/html-api)
-
-
 [&lt;vaadin-element&gt;](https://vaadin.com/components/vaadin-element) is a Web Component providing &lt;element-functionality&gt;, part of the [Vaadin components](https://vaadin.com/components).
 
 <!--
@@ -74,6 +69,13 @@ Once installed, import it in your application:
 ```js
 import '@vaadin/vaadin-element/vaadin-element.js';
 ```
+
+## Live Demo and API Documentation
+
+[Live Demo ↗](https://vaadin.com/components/vaadin-element/html-examples)
+|
+[API documentation ↗](https://vaadin.com/components/vaadin-element/html-api)
+
 
 ## Getting started
 
