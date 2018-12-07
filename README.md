@@ -77,7 +77,7 @@ import '@vaadin/vaadin-element/vaadin-element.js';
 [API documentation ↗](https://vaadin.com/components/vaadin-element/html-api)
 
 
-## Getting started
+## Theming
 
 Vaadin components use the Lumo theme by default.
 
