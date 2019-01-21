@@ -95,6 +95,7 @@ To use the Material theme, import the correspondent file from the `theme/materia
 ## Running demos and tests in a browser
 Ensure you have [npm](https://www.npmjs.com/) and [Bower](https://bower.io) installed.
 
+
 Clone the `vaadin-element` repository.
 ```bash
 $ git clone https://github.com/vaadin/vaadin-element.git
@@ -118,7 +119,7 @@ $ npm start
 
 View the demos at:
 
-[http://127.0.0.1:3000/components/vaadin-element/demo](http://127.0.0.1:3000/components/vaadin-element/demo)
+1. Make sure you have [npm](https://www.npmjs.com/) and [Bower](https://bower.io) installed.
 
 Run the tests:
 
@@ -128,6 +129,8 @@ View local version of API documentation:
 
 [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
+  - http://127.0.0.1:3000/components/vaadin-element/demo
+  - http://127.0.0.1:3000/components/vaadin-element/test
 
 
 ## Running tests from the command line
