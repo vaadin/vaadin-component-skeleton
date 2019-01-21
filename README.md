@@ -95,14 +95,14 @@ To use the Material theme, import the correspondent file from the `theme/materia
 ## Running demos and tests in a browser
 Ensure you have [npm](https://www.npmjs.com/) and [Bower](https://bower.io) installed.
 
-Clone the `vaadin-select` repository.
+Clone the `vaadin-element` repository.
 ```bash
-$ git clone https://github.com/vaadin/vaadin-select.git
+$ git clone https://github.com/vaadin/vaadin-element.git
 ```
 
-Change into the `vaadin-select` directory.
+Change into the `vaadin-element` directory.
 ```bash
-$ cd vaadin-select
+$ cd vaadin-element
 ```
 
 Install the dependencies.
@@ -118,11 +118,11 @@ $ polymer serve --port 3000
 
 View the demos at :
 
-[http://127.0.0.1:3000/components/vaadin-select/demo](http://127.0.0.1:3000/components/vaadin-select/demo)
+[http://127.0.0.1:3000/components/vaadin-element/demo](http://127.0.0.1:3000/components/vaadin-element/demo)
 
 Run the tests :
 
-[http://127.0.0.1:3000/components/vaadin-select/test](http://127.0.0.1:3000/components/vaadin-select/test)
+[http://127.0.0.1:3000/components/vaadin-element/test](http://127.0.0.1:3000/components/vaadin-element/test)
 
 View local version of API documentation  :
 
