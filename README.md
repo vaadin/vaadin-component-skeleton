@@ -116,15 +116,15 @@ Launch a webserver to serve the demo & tests.
 $ npm start
 ```
 
-View the demos at :
+View the demos at:
 
 [http://127.0.0.1:3000/components/vaadin-element/demo](http://127.0.0.1:3000/components/vaadin-element/demo)
 
-Run the tests :
+Run the tests:
 
 [http://127.0.0.1:3000/components/vaadin-element/test](http://127.0.0.1:3000/components/vaadin-element/test)
 
-View local version of API documentation  :
+View local version of API documentation:
 
 [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
