@@ -113,7 +113,7 @@ $ bower install
 
 Launch a webserver to serve the demo & tests.
 ```bash
-$ polymer serve --port 3000
+$ npm start
 ```
 
 View the demos at :
