@@ -29,6 +29,6 @@
     "preversion": "gulp version:update"
   },
   "devDependencies": {
-    "@vaadin/vaadin-component-dev-dependencies": "^1.0.0"
+    "@vaadin/vaadin-component-dev-dependencies": "^2.0.0"
   }
 }
