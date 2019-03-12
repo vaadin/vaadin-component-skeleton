@@ -24,11 +24,13 @@
   ],
   "scripts": {
     "test": "wct",
+    "lint": "gulp lint",
+    "version:check": "gulp version:check",
     "prestart": "polymer analyze vaadin-* > analysis.json",
     "start": "polymer serve --open",
     "preversion": "gulp version:update"
   },
   "devDependencies": {
-    "@vaadin/vaadin-component-dev-dependencies": "^1.0.0"
+    "@vaadin/vaadin-component-dev-dependencies": "^2.0.0"
   }
 }

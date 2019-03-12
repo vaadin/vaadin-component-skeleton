@@ -15,8 +15,6 @@ const semver = require('semver');
 const fs = require('fs');
 const path = require('path');
 
-gulp.task('lint', ['lint:js', 'lint:html', 'lint:css']);
-
 gulp.task('lint:js', function() {
   return gulp.src([
     '*.js',
@@ -62,6 +60,8 @@ gulp.task('lint:css', function() {
     }));
 });
 
+gulp.task('lint', gulp.parallel('lint:js', 'lint:html', 'lint:css'));
+
 // https://github.com/bower/bower/issues/2522
 gulp.task('bower:check', function(cb) {
   function verifyIfPresent(resolvedPackage, bowerJson, dependenciesPath) {
@@ -104,7 +104,7 @@ gulp.task('bower:check', function(cb) {
   cb(bowerJsonValid ? null : new Error(`Bower has dependencies resolutions that violate semver and don't allow webjars.org deployment.`));
 });
 
-gulp.task('version:check', ['bower:check'], function() {
+gulp.task('version:check', gulp.series('bower:check', function() {
   const expectedVersion = new RegExp('^' + require('./package.json').version + '$');
   return gulp.src(['src/*.html'])
     .pipe(htmlExtract({sel: 'script'}))
@@ -113,9 +113,9 @@ gulp.task('version:check', ['bower:check'], function() {
     .pipe(replace(/.*\n.*return '(.*)'.*/, '$1'))
     .pipe(grepContents(expectedVersion, {invert: true}))
     .pipe(expect({reportUnexpected: true}, []));
-});
+}));
 
-gulp.task('version:update', ['version:check'], function() {
+gulp.task('version:update', gulp.series('version:check', function() {
   // Should be run from 'preversion'
   // Assumes that the old version is in package.json and the new version in the `npm_package_version` environment variable
   const oldversion = require('./package.json').version;
@@ -130,4 +130,4 @@ gulp.task('version:update', ['version:check'], function() {
     .pipe(replace(oldversion, newversion))
     .pipe(gulp.dest('src'))
     .pipe(git.add());
-});
+}));
