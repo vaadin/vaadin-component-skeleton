@@ -58,7 +58,7 @@ To use the Material theme, import the correspondent file from the `theme/materia
   `vaadin-component.js`
 
 
-## Running demos and tests in a browser
+## Running demos and API docs in a browser
 
 1. Fork the `vaadin-component` repository and clone it locally.
 

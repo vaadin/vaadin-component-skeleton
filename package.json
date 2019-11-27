@@ -41,7 +41,7 @@
   },
   "scripts": {
     "analyze": "wca analyze src/vaadin-*.ts --format json --outFile custom-elements.json",
-    "build": "tsc && replace-in-file \"/(import|from)( '[.]+/)(.*)(?<!.js)(';)/g\" \"\\$1\\$2\\$3.js\\$4\" vaadin-*.{js,d.ts},src*.{js,d.ts},theme/**/*.{js,d.ts} --isRegex --verbose",
+    "build": "tsc && replace-in-file \"/(import|from)( '[.]+/)(.*)(?<!.js)(';)/g\" \"\\$1\\$2\\$3.js\\$4\" vaadin-*.{js,d.ts},src/*.{js,d.ts},theme/**/*.{js,d.ts} --isRegex --verbose",
     "dist": "rimraf dist && npm run analyze && npm run build && rollup -c rollup.config.js && cp custom-elements.json dist",
     "check:version": "magi check-version",
     "gemini": "gemini update test/visual",
@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@vaadin/control-state-mixin": "^0.1.0",
-    "@vaadin/element-base": "^0.1.2",
+    "@vaadin/element-base": "^0.1.3",
     "@vaadin/themable-element": "^0.1.2",
     "@vaadin/vaadin-lumo-styles": "^1.5.0",
     "@vaadin/vaadin-material-styles": "^1.2.3",
@@ -71,7 +71,6 @@
     "tslib": "^1.10.0"
   },
   "devDependencies": {
-    "@polymer/iron-test-helpers": "^3.0.1",
-    "@vaadin/vaadin-component-dev-dependencies": "^4.2.1"
+    "@vaadin/vaadin-component-dev-dependencies": "^4.3.0"
   }
 }
