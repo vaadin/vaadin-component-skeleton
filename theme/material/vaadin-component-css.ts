@@ -1,4 +1,4 @@
-import { css } from '@vaadin/vaadin-themable-mixin/register-styles.js';
+import { css } from 'lit-element';
 import '@vaadin/vaadin-material-styles/color.js';
 import '@vaadin/vaadin-material-styles/typography.js';
 
